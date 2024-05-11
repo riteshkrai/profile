@@ -35,6 +35,64 @@
 
     <!-- Custom styles for this template -->
     <link href="css/resume.min.css" rel="stylesheet" />
+
+    <style>
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    color: #fff;
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex;
+}
+
+/* Updated CSS */
+.card {
+    flex: 0 0 auto;
+    width: 80%; /* Adjust card width as needed */
+    margin: 0 auto; /* Center the cards horizontally */
+}
+
+.card-img-top {
+    width: 200px; /* Adjust image width as needed */
+    height: auto;
+    float: left; /* Float the image to the left */
+    margin-right: 20px; /* Add some space between image and text */
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-title {
+    margin-bottom: auto; /* Align the title to the top */
+}
+
+/* Align text to the right side */
+.text-right {
+    text-align: left; /* Align text to the left for small devices */
+}
+
+/* Adjust text alignment for small devices */
+@media (max-width: 767.98px) {
+    .card-img-top {
+        float: none; /* Remove float for small devices */
+        margin: 0 auto 20px; /* Center image vertically and add space below */
+    }
+    .text-right {
+        text-align: left; /* Align text to the left for small devices */
+    }
+}
+    </style>
   </head>
 
   <body id="page-top">
@@ -70,7 +128,7 @@
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#interests"
-              >Research</a
+              >Research & Projects</a
             >
           </li>
           <li class="nav-item">
@@ -84,7 +142,7 @@
             >
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#Project">Projects</a>
+            <a class="nav-link js-scroll-trigger" href="#Project">Funded Projects</a>
           </li>
         </li>
         <li class="nav-item">
@@ -111,9 +169,9 @@
              href="https://www.csio.res.in/">www.csio.res.in</a>) India.
             &ensp;
             <br/>
-            <a style="text-transform: lowercase; text-decoration: none;" href="mailto:name@email.com">
+            <a style="text-transform: lowercase; text-decoration: none;" href="kr.riteshrai@gmail.com">
               kr.riteshrai@gmail.com</a>&ensp;
-            <a style="text-transform: lowercase; text-decoration: none;" href="mailto:name@email.com">
+            <a style="text-transform: lowercase; text-decoration: none;" href="riteshkr@csio.res.in">
               riteshkr@csio.res.in </a>
            
           </div>
@@ -174,15 +232,78 @@
 
       <section
         class="resume-section p-3 p-lg-5 d-flex flex-column"
-        id="interests"
-      >
+        id="interests">
         <div class="my-auto">
-          <h2 style="color: #3264a8;" class="mb-2">R<span style="text-transform: uppercase; font-size: 1.2rem;">esearch</span> </h2>
-          <p>My research  interests  and projects revolve around three categories.</p>
-          <li>
-          <h5 style="text-transform: capitalize;">
-            Understanding Chemical space of odorants</h5>
+          <h2 style="color: #3264a8;" class="mb-2">R<span style="text-transform: uppercase; font-size: 1.2rem;">esearch</span> <span style="font-size: 1.2rem;">&</span>  P<span style="text-transform: uppercase; font-size: 1.2rem;">roject</span></h2>
+          <p>My research  interests  and projects revolve around following categories.</p>
+
+          <li style="text-transform: capitalize;color: #808B96; font-size: 0.95em;font-weight: bold;">Artificial Intelligence Powered Solutions for Animal Health Analytics
           </li>
+          <ul class="fa-ul mb-0">
+            <li style="font-size: 0.9rem;">
+              This project aims to leverage the advancement in efficient 
+              sensor deployment coupled with artificial intelligence to monitor,
+               analyze and forecast animal health in real-time. 
+               We envision that data analytics will play a pivotal role
+                to break past the saturation point of animal management and 
+                productivity by developing platforms and algorithms to gather,
+                 collate and efficiently visualize the collected data and 
+                 finally derive actionable insights from the data gathered using 
+                machine learning techniques.
+
+            </li>
+             <br/>
+            <!--<li>
+              <i class="fa fa-refresh fa-spin"></i>
+            <a style="text-transform: capitalize; text-decoration: none; font-size: 0.9rem;"
+             href="https://www.science.org/doi/abs/10.1126/science.aal2014">
+               Predicting human olfactory perception from chemical features of odor molecules</a>
+            </li>
+            <li>
+              <i class="fa fa-refresh fa-spin"></i>
+            <a style="text-transform: capitalize; text-decoration: none; font-size: 0.9rem;"
+             href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4615634/">
+              Understanding the Odour Spaces: A Step towards Solving Olfactory
+               Stimulus-Percept Problem</a>
+            </li>
+            <li>
+              <i class="fa fa-refresh fa-spin"></i>
+            <a style="text-transform: capitalize; text-decoration: none; font-size: 0.9rem;" href="#">
+              DeepFragrance a peek into the olfactory chemical space</a>
+            </li>
+            <br/> -->
+          </ul>
+
+          <li style="text-transform: capitalize;color: #808B96; font-size: 0.95em;font-weight: bold;">Algorithm Development for Bee Detection in Beehives in Indian Scenario
+           </li>
+          <ul class="fa-ul mb-0">
+            <li style="font-size: 0.9rem;">
+              The need for bee detection is two-fold, first it is pertinent for environmental health monitoring and
+               second the traditional methods used by entomologists are time consuming and often not accurate. 
+               By using AI, it is possible to train the technology to identify and categorize various insects and
+                bees species through analyzing images or videos of their physical attributes. 
+                This has the potential to facilitate swift and precise monitoring of  populations in their natural habitats.
+                 We envision the following to be the primary objectives of our project:
+            </li>
+             <br/>
+            <li style="text-transform: capitalize; text-decoration: none; font-size: 0.9rem;color: #6495ED;">
+              <i class="fa fa-refresh fa-spin"></i>
+              To develop algorithms for  bees detection in video images with accuracy and speed.
+            </li>
+            <li style="text-transform: capitalize; text-decoration: none; font-size: 0.9rem;color: #6495ED;">
+              <i class="fa fa-refresh fa-spin"></i>
+              To develop algorithms for bees activity monitoring.
+            </li>
+            <!--<li>
+              <i class="fa fa-refresh fa-spin"></i>
+            <a style="text-transform: capitalize; text-decoration: none; font-size: 0.9rem;" href="#">
+              DeepFragrance a peek into the olfactory chemical space</a>
+            </li>-->
+            <br/> 
+          </ul>
+
+
+          <li style="text-transform: capitalize;color: #808B96; font-size: 0.95em;font-weight: bold;">Understanding Chemical space of odorants</li>
           <ul class="fa-ul mb-0">
             <li style="font-size: 0.9rem;">
               Fragrance and aroma are an essential part of the animal kingdom.
@@ -217,9 +338,9 @@
             </li>
             <br/>
           </ul>
-          <li>
-          <h5 style="text-transform: capitalize;">
-            Odor Source Localisation Techniques</h5>
+
+          <li style="text-transform: capitalize;color: #808B96; font-size: 0.95em;font-weight: bold;">
+            Odor Source Localisation Techniques
           </li>
           <ul class="fa-ul mb-0">
             <li style="font-size: 0.9rem;">
@@ -255,7 +376,7 @@
             <br/>
           </ul>
 
-          <li> <h5 style="text-transform: capitalize;">
+          <li style="text-transform: capitalize;color: #808B96; font-size: 0.95em;font-weight: bold;"> 
           Electronic Nose and Tongue system development</h5>
           </li>
           <ul class="fa-ul mb-0">
@@ -297,16 +418,203 @@
             </li>
           </ul> -->
           <br/>
-          <li>
-          <p>I have also worked on  the design of human opinion dynamics based
+          <li style="text-transform: capitalize;color: #808B96; font-size: 0.95em;font-weight: bold;">I have also worked on  the design of human opinion dynamics based
              optimization algorithm. This work was published in
             <a href="https://www.nature.com/articles/srep03008">Nature, Scientific Reports</a>
               and the software is open sourced 
               <a href=https://github.com/riteshcanfly/CODO> here.</a>
-            </p></li>
+            </li>
           <!-- <p class="mb-0">When forced indoors, I follow a number of sci-fi and fantasy genre movies and television shows, I am an aspiring chef, and I spend a large amount of my free time exploring the latest technolgy advancements in the front-end web development world.</p> -->
         </div>
-        <div class="my-5">
+<!-- Project Staff -->
+  <!-- </br> -->
+        <div class="my-4">
+          <h4 style="color: #3264a8;" class="mb-2">Project Staff & PHD Scholar</h4>
+          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+              </ol>
+              <div class="carousel-inner">
+                  <div class="carousel-item active">
+                      <div class="card-deck" style="height: 24vh;">
+                          <div class="card mb-3" style="max-width: 80%;max-height: 100%;">
+                              <div class="row g-0">
+                                  <div class="col-md-4">
+                                      <img src="img/Suman.jpg" class="card-img-top" alt="Card 1" style="width: 125%;height: 24.8vh;">
+                                  </div>
+                                  <div class="col-md-8">
+                                      <div class="card-body" style="margin-left: 1rem;">
+                                          <p style="font-size: 0.97rem;"><b>Name :-</b> Suman Kumar</p>
+                                          <p style="font-size: 0.95rem;"><b>Designation :-  </b>Project Associate</p>
+                                          <p style="font-size: 0.95rem;"><b>Email :-</b> sk.csio94@gmail.com</p>
+                                          <p style="font-size: 0.95rem;"><b>Linkedin :-</b> <a href="https://www.linkedin.com/feed/">kumar Suman<a></a></p>
+                                          <p style="font-size: 0.95rem;"><b>Website :-</b> <a href="https://anndata.csio.res.in/">Anndata</a></p>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="card mb-3" style="max-width: 80%;max-height: 100%;">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="img/Shubham.jpg" class="card-img-top" alt="Card 1" style="width: 125%;height: 25vh;">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body" style="margin-left: 1rem;">
+                                        <p style="font-size: 0.95rem;"><b>Name :-</b> Shubham Dixit</p>
+                                        <p style="font-size: 0.95rem;"><b>Designation :-  </b>Project Associate</p>
+                                        <p style="font-size: 0.95rem;"><b>Email :-</b> shubhdixit20@gmail.com</p>
+                                        <p style="font-size: 0.95rem;"><b>Linkedin :-</b> <a href="https://www.linkedin.com/in/shubham-dixit-ba1193179/">Shubham Dixit<a></a></p>
+                                        <p style="font-size: 0.95rem;"><b>Website :-</b> <a href="https://anndata.csio.res.in/"></a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mb-3" style="max-width: 80%;max-height: 100%;">
+                          <div class="row g-0">
+                              <div class="col-md-4">
+                                  <img src="img/Rahul.jpg" class="card-img-top" alt="Card 1" style="width: 125%;height: 25vh;">
+                              </div>
+                              <div class="col-md-8">
+                                  <div class="card-body" style="margin-left: 1rem;">
+                                      <p style="font-size: 0.95rem;"><b>Name :-</b> Rahul Jana</p>
+                                      <p style="font-size: 0.95rem;"><b>Designation :-  </b>Software Engineer</p>
+                                      <p style="font-size: 0.95rem;"><b>Email :-</b> csio.rahuljana@gmail.com</p>
+                                      <p style="font-size: 0.95rem;"><b>Linkedin :-</b> <a href="https://www.linkedin.com/in/rahuljana-4/">Rahul Jana<a></a></p>
+                                      <p style="font-size: 0.95rem;"><b>Website :-</b> <a href="https://anndata.csio.res.in/"></a></p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                        <!-- Add more cards for the first slide if needed -->
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="card-deck" style="height: 24vh;">
+                        <div class="card mb-3" style="max-width: 80%;max-height: 100%;">
+                            <div class="row g-0">
+                              <div class="col-md-4">
+                                <img src="img/" class="card-img-top" alt="Card 1" style="width: 125%;height: 25vh;">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body" style="margin-left: 1rem;">
+                                    <p style="font-size: 0.95rem;"><b>Name :-</b> Mrityunjay Sharma</p>
+                                    <p style="font-size: 0.95rem;"><b>Designation :-  </b>Research Scholar</p>
+                                    <p style="font-size: 0.95rem;"><b>Email :-</b> mrityunjay.csio24j@acsir.res.in</p>
+                                    <p style="font-size: 0.95rem;"><b>Linkedin :-</b> <a href="https://www.linkedin.com/in/rahuljana-4/"></a></p>
+                                    <p style="font-size: 0.95rem;"><b>Website :-</b> <a href="https://anndata.csio.res.in/"></a></p>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="card mb-3" style="max-width: 80%;max-height: 100%;">
+                          <div class="row g-0">
+                            <div class="col-md-4">
+                              <img src="img/" class="card-img-top" alt="Card 1" style="width: 125%;height: 25vh;">
+                          </div>
+                          <div class="col-md-8">
+                              <div class="card-body" style="margin-left: 1rem;">
+                                  <p style="font-size: 0.95rem;"><b>Name :-</b> </p>
+                                  <p style="font-size: 0.95rem;"><b>Designation :-  </b></p>
+                                  <p style="font-size: 0.95rem;"><b>Email :-</b> </p>
+                                  <p style="font-size: 0.95rem;"><b>Linkedin :-</b> <a href="https://www.linkedin.com/in/rahuljana-4/"></a></p>
+                                  <p style="font-size: 0.95rem;"><b>Website :-</b> <a href="https://anndata.csio.res.in/"></a></p>
+                              </div>
+                          </div>
+                          </div>
+                      </div>
+                      <div class="card mb-3" style="max-width: 80%;max-height: 100%;">
+                        <div class="row g-0">
+                          <div class="col-md-4">
+                            <img src="img/" class="card-img-top" alt="Card 1" style="width: 125%;height: 25vh;">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body" style="margin-left: 1rem;">
+                                <p style="font-size: 0.95rem;"><b>Name :-</b> </p>
+                                <p style="font-size: 0.95rem;"><b>Designation :-  </b></p>
+                                <p style="font-size: 0.95rem;"><b>Email :-</b> </p>
+                                <p style="font-size: 0.95rem;"><b>Linkedin :-</b> <a href="https://www.linkedin.com/in/rahuljana-4/"></a></p>
+                                <p style="font-size: 0.95rem;"><b>Website :-</b> <a href="https://anndata.csio.res.in/"></a></p>
+                            </div>
+                        </div>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+                
+                <div class="carousel-item">
+                  <div class="card-deck" style="height: 24vh;">
+                      <div class="card mb-3" style="max-width: 80%;max-height: 100%;">
+                          <div class="row g-0">
+                              <!-- <div class="col-md-4">
+                                  <img src="img/profile.jpg" class="card-img-top" alt="Card 1" style="width: 150%;height: 23vh;">
+                              </div>
+                              <div class="col-md-8">
+                                  <div class="card-body" style="margin-left: 1.5rem;">
+                                      <h5 class="card-title">Name :- </h5>
+                                      <p class="card-text">Email :-</p>
+                                      <p class="card-text">Linkedin :-</p>
+                                      <p class="card-text">Website :-</p>
+                                  </div>
+                              </div> -->
+                          </div>
+                      </div>
+                      <div class="card mb-3" style="max-width: 80%;max-height: 100%;">
+                        <div class="row g-0">
+                          <!-- <div class="col-md-4">
+                              <img src="img/profile.jpg" class="card-img-top" alt="Card 1" style="width: 150%;height: 23vh;">
+                          </div>
+                          <div class="col-md-8">
+                              <div class="card-body" style="margin-left: 1.5rem;">
+                                  <h5 class="card-title">Name :- </h5>
+                                  <p class="card-text">Email :-</p>
+                                  <p class="card-text">Linkedin :-</p>
+                                  <p class="card-text">Website :-</p>
+                              </div>
+                          </div> -->
+                        </div>
+                    </div>
+                    <div class="card mb-3" style="max-width: 80%;max-height: 100%;">
+                      <div class="row g-0">
+                        <!-- <div class="col-md-4">
+                            <img src="img/profile.jpg" class="card-img-top" alt="Card 1" style="width: 150%;height: 23vh;">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body" style="margin-left: 1.5rem;">
+                                <h5 class="card-title">Name :- </h5>
+                                <p class="card-text">Email :-</p>
+                                <p class="card-text">Linkedin :-</p>
+                                <p class="card-text">Website :-</p>
+                            </div>
+                        </div> -->
+                      </div>
+                    </div>
+                    <!-- Add more cards for the slide if needed -->
+                </div>
+              </div>
+                    <!-- Add more cards for the first slide if needed -->
+                      </div>
+                  </div>
+                  <!-- Add more carousel items as needed -->
+              </div>
+
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+                
+<!-- Project Staff End -->
+
+<!-- PHD -->
+
+<!-- PHD End -->
+
+        <div class="my-4">
           <h2 class="mb-2">Other ongoing and completed research</h2>
           <ul class="fa-ul mb-0">
             <li>
@@ -350,7 +658,7 @@
           <!-- <p class="mb-0">When forced indoors, I follow a number of sci-fi and fantasy genre movies and television shows, I am an aspiring chef, and I spend a large amount of my free time exploring the latest technolgy advancements in the front-end web development world.</p> -->
         </div>
       </section>
-
+<!-- Experience -->
       <section
         class="resume-section p-3 p-lg-5 d-flex flex-column"
         id="experience"
@@ -415,6 +723,7 @@
         </div>
       </section>
 
+<!-- Education -->
       <section
         class="resume-section p-3 p-lg-5 d-flex flex-column"
         id="education"
@@ -466,7 +775,7 @@
         id="Project"
       >
         <div class="my-auto">
-          <h2 class="mb-5">Projects</h2>
+          <h2 class="mb-5">Funded Projects</h2>
           <table class="table table-sm">
             <thead>
               <tr>
@@ -479,6 +788,39 @@
               </tr>
             </thead>
             <tbody>
+              <!-- Updated -->
+              <tr>
+                <th scope="row">2024</th>
+                <td colspan="2">
+                  Algorithm Development for Bee Detection in Beehives in Indian Scenario
+                </td>
+                <td>DST-AWaDH-IIT Ropar</td>
+                <td>PI</td>
+                <td>Rs. 15 Lakhs</td>
+              </tr>
+
+              <tr>
+                <th scope="row">2022</th>
+                <td colspan="2">
+                  Artificial Intelligence powered solutions for animal
+                  health analytics
+                </td>
+                <td>DST-AWaDH-IIT Ropar</td>
+                <td>PI</td>
+                <td>Rs. 1.06 Crore</td>
+              </tr>
+
+              <tr>
+                <th scope="row">2022</th>
+                <td colspan="2">
+                  Objective assessment of Saltiness in Salt and Salt
+                  Blends
+                </td>
+                <td>TATA Consumer Products Ltd., Pune, India</td>
+                <td>PI</td>
+                <td>Rs. 13.5 Lakhs</td>
+              </tr>
+              <!-- Update End -->
               <tr>
                 <th scope="row">2021</th>
                 <td colspan="2">
@@ -601,6 +943,21 @@
         <div class="my-3">
           <h2 class="mb-5">Awards &amp; Fellowships</h2>
           <ul class="fa-ul mb-0">
+            <!-- updted 7-05-2024 -->
+            <li>
+              <i class="fa-li fa fa-trophy text-warning"></i>
+              2022 Indian National Academy of Engineers travel award to present work in INAE annual conference at Kolkata.
+            </li>
+            <li>
+              <i class="fa-li fa fa-trophy text-warning"></i>
+              2020 Royal Society travel fellowship to participate in ECRO–Dresden.
+            </li>
+
+            <li>
+              <i class="fa-li fa fa-trophy text-warning"></i>
+              2020 Royal Society travel fellowship to participate in ISOT–Philadelphia.
+            </li>
+            <!-- updated end  -->
             <li>
               <i class="fa-li fa fa-trophy text-warning"></i>
               2019 Royal Society Newton Fellowship (awarded to 40 early career
@@ -732,8 +1089,8 @@
               11. Kumar, R., R. Kaur, and A. P. Bhondekar (2015). “The Smell
               Network”. In: Multidisciplinary Social Networks Research
               Communications in Computer and Information Science,
-              (http://link.springer.com/chapter/10.1007%2F978-3-662-
-              48319-0_38). Vol. 540. Springer Berlin Heidelberg, pp.460 – 469.
+              (http://link.springer.com/chapter/10.1007%2F978-3-662-48319-0_38).
+               Vol. 540. Springer Berlin Heidelberg, pp.460 – 469.
             </li>
             <br />
             <li>
@@ -1001,6 +1358,59 @@
               applications: A review. Critical Reviews in Food Science and
               Nutrition, 1–20.
             </li>
+            <!-- updated data -->
+            <br />
+            <li>
+              <!-- <i class="devicons devicons-javascript"></i> -->
+              45.  Amafabia, D., L. Asimea, J. Bally, A. Baran, A. Boies,
+              A. Borjali, C. Bosomworth, B. Burningham, N.-A. Chaliasou, Y. K.CHEN, et al.
+              (2022). Proceedings of Abstracts, School of Physics, 
+              Engineering and Computer Science Research Conference 2022.
+            </li>
+            <br />
+            <li>
+              <!-- <i class="devicons devicons-javascript"></i> -->
+              46. Patel, S., V. Kumar, R. Kumar, S. Sharma, R. Sharma, R. Kaur, and P. Kumar (2022).
+              Trends of the publications of platelet-rich plasma use in osteoarthritis knee–A PubMed
+              and Scopus bibliometric analysis. Journal of Arthroscopic
+              Surgery and Sports Medicine 3(2), 101–110.
+            </li>
+            <br />
+            <li>
+              <!-- <i class="devicons devicons-javascript"></i> -->
+              47. Sharma, A., A. D. Tiwari, M. Kumari, N. Kumar, V. Saxena, and R. Kumar (2022).
+               Artificial intelligence-based prediction of lycopene content in raw tomatoes
+                using physicochemical attributes. Phytochemical Analysis.
+            </li>
+            <br />
+            <li>
+              <!-- <i class="devicons devicons-javascript"></i> -->
+              48.  Barsainyan, A. A., R. Kumar, P. Saha, and M. Schmuker (2023). 
+              Open Source Principal Odor Map paperhttps://github.com/riteshcanfly/openpom.
+            </li>
+            <br />
+            <li>
+              <!-- <i class="devicons devicons-javascript"></i> -->
+              49. Sharma, A., R. Kumar, N. Kumar, K. Kaur, V. Saxena, and P. Ghosh (2023). 
+              Chemometrics driven portable Vis-SWNIR
+              spectrophotometer for non-destructive quality evaluation of raw tomatoes. 
+              Chemometrics and Intelligent Laboratory Systems 242, 105001.
+            </li>
+            <br />
+            <li>
+              <!-- <i class="devicons devicons-javascript"></i> -->
+              50.  Sharma, A., J. Nagarajan, K. Gopalakrishnan, V. Bodana, A. Singh, P. K. Prabhakar, R. Suhag, and R. Kumar (2023).
+              “Nanotechnology applications and implications in food industry”. In: Nanotechnology Applications for Food Safety
+              and Quality Monitoring. Elsevier, pp.171–182.
+            </li>
+            <br />
+            <li>
+              <!-- <i class="devicons devicons-javascript"></i> -->
+              51. Sharma, A., R. Kumar, N. Kumar, and V. Saxena (2024).
+              Machine learning driven portable Vis-SWNIR spectrophotometer for non-destructive
+              classification of raw tomatoes based on lycopene content.
+              Vibrational Spectroscopy 130, 103628.
+            </li>
             <!-- <li class="list-inline-item">
               <i class="devicons devicons-jquery"></i>
             </li>
@@ -1027,8 +1437,36 @@
             </li> -->
           </ul>
           <br />
+
+          <div class="subheading mb-3">Design patent & Copyright</div>
+            <ul class="fa-ul mb-0">
+            <li>
+              <i class="fa-li fa fa-check"></i>
+              A process and device for rapid estimation of edible oil and ghee (clarified butter) quality (201811011606)
+            </li>
+            <li>
+              <i class="fa-li fa fa-check"></i>
+              A process for the development of taste scale to quantify and differentiate the taste parameters in food and beverages. (Filed)
+            </li>
+            <li>
+              <i class="fa-li fa fa-check"></i>
+              OCR and translation system software- DPOLYGLOT SW-15937/2023
+            </li>
+            <li>
+              <i class="fa-li fa fa-check"></i>
+              COLORIMETER / FLUORIMETER BASED TESTING DEVICE 377131-001
+            </li>
+            <li>
+              <i class="fa-li fa fa-check"></i>
+              ARTIFICIAL INTELLIGENCE BASED TABLE-TOP SPECTROPHOTOMETER FOR NON-DESTRUCTIVE QUALITY EVALUATION OF FRUITS AND VEGETABLES 376671-001
+            </li>
+            
+            </ul>
+          </div>
+        </br>
+
           <div class="subheading mb-3">Talks and other Academic Activities</div>
-          <ul class="fa-ul mb-0">
+            <ul class="fa-ul mb-0">
             <li>
               <i class="fa-li fa fa-check"></i>
               Talks on using machine learning for understanding fragrance space
@@ -1075,8 +1513,8 @@
               Royal Society-Interface, Chemmometrics and Intelligent Laboratory
               Systems.
             </li>
-          </ul>
-        </div>
+            </ul>
+          </div>
       </section>
 
       
@@ -1098,5 +1536,17 @@
 
     <!-- Custom scripts for this template -->
     <script src="js/resume.min.js"></script>
+
+    <!-- Bootstrap JS and jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script>
+  // Enable auto sliding
+  $('#carouselExampleIndicators').carousel({
+    interval: 2000 // Change the interval time as needed (in milliseconds)
+  });
+</script>
   </body>
 </html>
